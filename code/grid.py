@@ -113,8 +113,10 @@ class Cell:
         """
         Fill the cell.
         """
-
-        self._is_occupied = True
+        if self._is_occupied:
+            pass
+        else:
+            self._is_occupied = True
 
     def empty(self):
         """
