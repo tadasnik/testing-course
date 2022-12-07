@@ -26,7 +26,7 @@ jobs:
         python -m pip install pytest pytest-cov codecov
     - name: Test with pytest
       run: |
-        pytest --cov=code/*.py
+        pytest --cov=code/
     - name: Upload coverage report
       run: |
         codecov
